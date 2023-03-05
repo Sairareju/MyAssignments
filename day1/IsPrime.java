@@ -1,54 +1,31 @@
 package week1.day1;
 
 public class IsPrime {
-
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		
-		
-		
-		for (int i=2; i<1000; i++) {
-			//int n=i;
+		int num= 2;
+		boolean nonprime = false;
+		for (int i = 2; i <= (num/2); i++) {
 			
-			if (i==2||i==3||i==5)
+			if(num%i==0)
 			{
-				System.out.println(i + " " +"PrimeNumber");
+				nonprime = true;
+		
 			}
-				
-			else if (i%2==0||i%3==0||i%5==0||i%7==0)
+			
+		
+		}
+			if (nonprime==false)
 			{
-				//System.out.println(i + " " +"Not a PrimeNumber");
-				continue;
-			}
-			/*else if (i%3==0)
-			{
-				//System.out.println(i + " " +"Not a PrimeNumber");
-				continue;
-			}
-			else if (i%5==0)
-			{
-				//System.out.println(i + " " +"Not a PrimeNumber");
-				continue;
-			}
+				System.out.println("Prime Number");
+		}
+			
 			else
 			{
-				System.out.println(i + " " +"PrimeNumber");
+				System.out.println("Non Prime Number");
 			}
 			
-			
-			
-					
 		}
-	}
-*/
-public static void main(String[] args) {
-	
-	int  n=100;
-	for (int i = 2; i < (n-1); i++) {
 		
-		if (n%i==0)
-		{
-		System.out.println(i + " " +"PrimeNumber");
-		}
-	}
 }
-}
+
