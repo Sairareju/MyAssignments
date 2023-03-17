@@ -53,21 +53,20 @@ public class Bookmyshow {
 			System.out.println("Parking is available for the selected theatre");
 		}
 
-
 		driver.findElement(By.xpath("//*[name()='svg' and @viewBox='0 0 23 23']//*[local-name()='path']")).click();
-		// driver.findElement(By.xpath("//div[@class='__details']/div[@class='__text']")).click();
+
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("(//div[@class='showtime-pill-container _available'])[1]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//li[@id='pop_1']")).click();
 		driver.findElement(By.xpath("//div[@id='proceed-Qty']")).click();
 		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//div[@id='B_1_01']/a[@class='_available']")).click();
+
 		driver.findElement(By.xpath("//div[contains(@id,'_1_21')]")).click();
 		Thread.sleep(2000);
 		WebElement pay = driver.findElement(By.xpath("//span[@id='btnSTotal_reserve']"));
 		driver.executeScript("arguments[0].click();", pay);
-		
+
 		Thread.sleep(3000);
 
 		WebElement subtot = driver.findElement(By.xpath("//span[@id='subTT']"));
